@@ -9,6 +9,14 @@ using Bank_Account_Validation_Plan.Model;
 
 namespace Bank_Account_Validation_Plan
 {
+    public static class ABAAcctVerificationRequestModelExtensions
+    {
+        public static string ToJson(this ABAAcctVerificationRequestModel val)
+        {
+            return JsonSerializer.Serialize<ABAAcctVerificationRequestModel>(val);
+        }
+    }
+
     public static class EnvironmentTypeExtensions
     {
         public static string ToDescriptionString(this EnvironmentType val)

@@ -15,5 +15,5 @@ var ABAAcctVerificationRequestModel = JsonSerializer.Serialize<ABAAcctVerificati
 });
 
 var aBAAcctVerificationPost = bankAccountValidationPlanClient.ABAAcctVerificationClient.Post(ABAAcctVerificationRequestModel);
-Console.WriteLine("GetReport = {0}", aBAAcctVerificationPost.ToString());
+Console.WriteLine(aBAAcctVerificationPost.ToString());
 Console.ReadKey();
