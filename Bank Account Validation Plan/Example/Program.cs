@@ -11,7 +11,7 @@ Console.WriteLine("Test ABAAcctVerification Post:");
 var ABAAcctVerificationRequestModel = JsonSerializer.Serialize<ABAAcctVerificationRequestModel>(new ABAAcctVerificationRequestModel()
 {
     BankRoutingNumber = "011103093",
-    BankAccountNumber = "19945192099"
+    BankAccountNumber = "9942192099"
 });
 
 var aBAAcctVerificationPost = bankAccountValidationPlanClient.ABAAcctVerificationClient.Post(ABAAcctVerificationRequestModel);

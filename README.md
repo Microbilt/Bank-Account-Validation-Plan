@@ -28,7 +28,7 @@ For report created request model
 ABAAcctVerificationRequestModel reqModel = new ABAAcctVerificationRequestModel()
 {
     BankRoutingNumber = "011103093",
-    BankAccountNumber = "19945192099"
+    BankAccountNumber = "9942192099"
 };
 ```
 You can Serialize model for use with extension method ```.ToJson()``` in 'Extensions.cs'
